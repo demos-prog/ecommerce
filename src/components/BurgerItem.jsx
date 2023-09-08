@@ -34,7 +34,7 @@ export default function BurgerItem({ item, setChosenObjects }) {
       </div>
       <div className='bgIt'>
         <div className='delBtnWrap'>
-          <img onClick={() => { handleDelete() }} className='delBtn' src={deleteIcon} alt="delete" />
+          <img onClick={handleDelete} className='delBtn' src={deleteIcon} alt="delete" />
         </div>
         <div className='bgItemInfo'>
           <div className='bg-i-n'>
@@ -52,7 +52,7 @@ export default function BurgerItem({ item, setChosenObjects }) {
           <div>Quantity: <b>{item.quantity}</b></div>
           <div className='btns'>
             <button className={item.quantity < 1 ? 'noActive' : 'active'} onClick={() => handleReduce()}>-</button>
-            <button className='active' onClick={() => handleAdd()}>+</button>
+            <button className='active' onClick={handleAdd}>+</button>
           </div>
         </div>
 

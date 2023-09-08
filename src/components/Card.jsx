@@ -22,7 +22,7 @@ export default function Card({ chosenObjects, setChosenObjects, item }) {
       {isDuplicate ?
         <button className='deleteBtn'>Added</button>
         :
-        <button className='cardBtn' onClick={() => { handleAdd() }}>Add to cart</button>
+        <button className='cardBtn' onClick={handleAdd}>Add to cart</button>
       }
     </div>
   )

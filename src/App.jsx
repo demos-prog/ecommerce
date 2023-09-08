@@ -57,7 +57,7 @@ function App() {
                 key={i}
               />
             })}
-          {chosenObjects.length > 0 && <button id="orderBtn" onClick={() => handleOrder()}><b>Make the order</b></button>}
+          {chosenObjects.length > 0 && <button id="orderBtn" onClick={handleOrder}><b>Make the order</b></button>}
         </Menu>
       </header>
       <main>
