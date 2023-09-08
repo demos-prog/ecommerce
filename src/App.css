@@ -1,0 +1,189 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  height: 70px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+#cont {
+  width: 100%;
+}
+
+#contentWrap {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#filterField {
+  position: sticky;
+  top: 70px;
+  padding: 10px;
+  height: min-content;
+  width: 200px;
+  min-width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#counter {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  width: 21px;
+  height: 21px;
+  position: relative;
+  top: 17px;
+  left: 90%;
+}
+
+.ff {
+  width: min-content;
+  white-space: nowrap;
+}
+
+#menuCounter {
+  border-radius: 50%;
+  text-align: center;
+  background-color: yellow;
+  width: 21px;
+  height: 21px;
+  position: relative;
+  top: -36px;
+  left: 40%;
+}
+
+
+#cartLogoWrap {
+  position: relative;
+}
+
+#cartLogo {
+  filter: invert(70%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.loaderWrap {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 90%;
+  top: 30px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  top: 0;
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#orderBtn {
+  padding: 10px 20px;
+  margin: auto;
+  border-radius: 5px;
+  transition: linear 0.2s;
+  background-color: rgb(206, 202, 202);
+}
+
+#orderBtn:hover {
+  background-color: #fff;
+}
+
+
+@media (min-width: 1200px) {
+
+  #contentWrap,
+  #cont {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 750px) {
+  #filterField{
+    min-width: auto;
+    width: 100px;
+  }
+}

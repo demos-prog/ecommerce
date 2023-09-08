@@ -1,0 +1,40 @@
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.cardWrap {
+  flex: 1 0 auto;
+  break-inside: avoid;
+  align-items: center;
+  padding: 10px;
+  width: 15%;
+  min-width: 180px;
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+}
+
+.cardWrap:hover .cardBtn {
+  background-color: goldenrod;
+}
+
+.cardBtn {
+  transition: linear 0.2s;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  white-space: nowrap;
+}
+
+.deleteBtn {
+  cursor: default;
+  transition: linear 0.2s;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(253, 75, 75);
+  color: white;
+  white-space: nowrap;
+}

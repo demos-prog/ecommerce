@@ -1,0 +1,88 @@
+.bgIt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bgItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bgItemImage {
+  aspect-ratio: 2/3;
+  height: 85px;
+}
+
+.bgItemInfo {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bg-i-n {
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.txt {
+  color: rgb(206, 202, 202);
+  text-decoration: underline;
+}
+
+.priceNum,
+.txt {
+  white-space: nowrap;
+}
+
+.quantityWrap {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns {
+  display: flex;
+  gap: 5px;
+}
+
+.active,
+.noActive {
+  transition: linear 0.2s;
+  border-radius: 3px;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(206, 202, 202);
+}
+
+.active:hover {
+  background-color: #fff;
+}
+
+.noActive {
+  cursor: default;
+  opacity: 50%;
+}
+
+.delBtnWrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delBtn {
+  transition: linear 0.3s;
+  width: 20px;
+  height: 20px;
+}
+
+.delBtn:hover {
+  cursor: pointer;
+  filter: invert(100%);
+}
