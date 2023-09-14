@@ -58,6 +58,8 @@ function App() {
               />
             })}
           {chosenObjects.length > 0 && <button id="orderBtn" onClick={handleOrder}><b>Make the order</b></button>}
+          <br />
+          <br />
         </Menu>
       </header>
       <main>
